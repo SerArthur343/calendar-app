@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calendar App</title>
+</head>
+<body>
+
+    <div class="month"></div>
+
+    <div class="utils">
+        <button class="prevMonth">◀️ Previous Month</button>
+        <button class="modeBtn">Dark Mode ⚫</button>
+        <button class="nextMonth">Next Month ▶️</button>
+    </div>
+
+    <div class="calendar">
+        <div class="cell dayCell">Mon</div>
+        <div class="cell dayCell">Tue</div>
+        <div class="cell dayCell">Wed</div>
+        <div class="cell dayCell">Thu</div>
+        <div class="cell dayCell">Fri</div>
+        <div class="cell dayCell">Sat</div>
+        <div class="cell dayCell">Sun</div>
+    </div>
+
+    <!-- THE MODAL OVERLAY -->
+    <div id="event-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <h3>Manage Events</h3>
+            <p id="modal-date-display"></p>
+        
+            <!-- Input field for the text -->
+            <input type="text" id="event-input" placeholder="Type your plan here...">
+        
+            <div class="modal-buttons">
+                <button id="save-btn">Save Plan</button>
+                <button id="cancel-btn">Cancel</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
